@@ -114,9 +114,7 @@
 	// Customizer
 	require_once( SINTEC_DIR_PATH_INC . 'customizer/customizer.php' );
 	// Class autoloader
-	require_once( SINTEC_DIR_PATH_INC . 'class-epsilon-dashboard-autoloader.php' );
 	// Class sintec dashboard
-	require_once( SINTEC_DIR_PATH_INC . 'class-epsilon-init-dashboard.php' );
 
 
 	if( class_exists( 'WooCommerce' ) ){
@@ -209,3 +207,11 @@ if ( ! function_exists( 'sintec_modern_supports' ) ) {
 	}
 	add_action( 'after_setup_theme', 'sintec_modern_supports', 20 );
 }
+
+/**
+ * The theme's Customizer controls.
+ *
+ * Replaces the Epsilon framework: same fields and stored values,
+ * built on core's Customizer API.
+ */
+require_once get_template_directory() . '/inc/customizer/colorlib-customizer/colorlib-customizer.php';

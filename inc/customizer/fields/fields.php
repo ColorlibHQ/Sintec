@@ -13,10 +13,10 @@
  * General Section Fields
  ***********************************/
 // Header top background color
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_theme_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Theme Color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_general_section',
@@ -28,17 +28,17 @@ Epsilon_Customizer::add_field(
  * Header Section Fields =====================================
  ***********************************/
 //Header Top
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'header_top_sec',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Header Top', 'sintec' ),
         'section'     => 'sintec_header_section',
         
     )
 );
 // Header top phone number
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_top_phone',
     array(
         'type'        => 'text',
@@ -50,7 +50,7 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header top email
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_top_address',
     array(
         'type'        => 'text',
@@ -63,10 +63,10 @@ Epsilon_Customizer::add_field(
 );
 
 
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'social_pro_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Social Profile', 'sintec' ),
         'section'     => 'sintec_header_section',
 
@@ -74,10 +74,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Social Profile Show/Hide
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_social_profile_toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Social Profile Show/Hide', 'sintec' ),
         'section'     => 'sintec_header_section',
         'default'     => false,
@@ -85,10 +85,10 @@ Epsilon_Customizer::add_field(
 );
 
 //Social Profile links
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'sintec_footer_social',
 	array(
-		'type'         => 'epsilon-repeater',
+		'type'         => 'colorlib-repeater',
 		'section'      => 'sintec_header_section',
 		'label'        => esc_html__( 'Social Profile Links', 'sintec' ),
 		'button_label' => esc_html__( 'Add new social link', 'sintec' ),
@@ -111,7 +111,7 @@ Epsilon_Customizer::add_field(
 			),
 			'social_icon'        => array(
 				'label'   => esc_html__( 'Icon', 'sintec' ),
-				'type'    => 'epsilon-icon-picker',
+				'type'    => 'colorlib-icon-picker',
 				'default' => 'fa fa-twitter',
 			),
 			
@@ -120,10 +120,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header top background color
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_top_header_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Top Background Color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_header_section',
@@ -131,10 +131,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header top background color
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_top_header_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Top Text Color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_header_section',
@@ -143,10 +143,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header navbar============================================
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'header_sec',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Header Navbar', 'sintec' ),
         'section'     => 'sintec_header_section',
         
@@ -154,10 +154,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header search form toggle field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_hsearchform_toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Show header search form', 'sintec' ),
         'description' => esc_html__( 'Toggle to show header search form.', 'sintec' ),
         'section'     => 'sintec_header_section',
@@ -166,10 +166,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_header_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Background Color', 'sintec' ),
         'description' => esc_html__( 'Select the header background color.', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
@@ -179,10 +179,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header nav menu color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_header_menu_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header menu color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_header_section',
@@ -191,10 +191,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header nav menu hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_header_menu_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header menu hover color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_header_section',
@@ -202,10 +202,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header menu dropdown background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_header_menu_dropbg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header menu dropdown background color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_header_section',
@@ -214,10 +214,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header dropdown menu color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_header_drop_menu_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Dropdown menu color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_header_section',
@@ -225,10 +225,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header dropdown menu hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_drop_menu_item_hover_bg',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Dropdown menu item hover background', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_header_section',
@@ -236,10 +236,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header dropdown menu hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_header_drop_menu_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Dropdown menu hover color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_header_section',
@@ -253,7 +253,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
  
 // Post excerpt length field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_excerpt_length',
     array(
         'type'        => 'text',
@@ -268,17 +268,17 @@ Epsilon_Customizer::add_field(
 
 
 // Blog sidebar layout field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_blog_layout',
     array(
-        'type'     => 'epsilon-layouts',
+        'type'     => 'colorlib-layouts',
         'label'    => esc_html__( 'Blog Layout', 'sintec' ),
         'section'  => 'sintec_blog_section',
         'description' => esc_html__( 'Select the option to set blog page layout.', 'sintec' ),
         'layouts'  => array(
-            '1' => get_template_directory_uri() . '/inc/libraries/epsilon-framework/assets/img/one-column.png',
-            '2' => get_template_directory_uri() . '/inc/libraries/epsilon-framework/assets/img/epsilon-section-titleright.jpg',
-            '3' => get_template_directory_uri() . '/inc/libraries/epsilon-framework/assets/img/epsilon-section-titleleft.jpg',
+            '1' => get_template_directory_uri() . '/inc/customizer/colorlib-customizer/assets/img/layout-one-column.svg',
+            '2' => get_template_directory_uri() . '/inc/customizer/colorlib-customizer/assets/img/layout-sidebar-right.svg',
+            '3' => get_template_directory_uri() . '/inc/customizer/colorlib-customizer/assets/img/layout-sidebar-left.svg',
         ),
         'default'  => array(
             'columnsCount' => 2,
@@ -300,19 +300,19 @@ Epsilon_Customizer::add_field(
 );
 
 // Blog single page social share icon
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_blog_meta',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog page post meta show/hide', 'sintec' ),
         'section'     => 'sintec_blog_section',
         'default'     => false
     )
 );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_blog_single_meta',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog single post meta show/hide', 'sintec' ),
         'section'     => 'sintec_blog_section',
         'default'     => false
@@ -329,7 +329,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // 404 text #1 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_fof_titleone',
     array(
         'type'              => 'text',
@@ -340,7 +340,7 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_fof_titletwo',
     array(
         'type'              => 'text',
@@ -351,10 +351,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #1 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_fof_textone_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #1 Color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_fof_section',
@@ -362,10 +362,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_fof_texttwo_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #2 Color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_fof_section',
@@ -373,10 +373,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_fof_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Page Background Color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_fof_section',
@@ -389,10 +389,10 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // Footer widget toggle field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_footer_widget_toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Footer widget show/hide', 'sintec' ),
         'description' => esc_html__( 'Toggle to display footer widgets.', 'sintec' ),
         'section'     => 'sintec_footer_section',
@@ -404,10 +404,10 @@ Epsilon_Customizer::add_field(
 // Copy right text
 $url = 'https://colorlib.com/';
 $copyText = sprintf( __( 'Theme by %s colorlib %s Copyright &copy; %s  |  All rights reserved.', 'sintec' ), '<a target="_blank" href="' . esc_url( $url ) . '">', '</a>', date( 'Y' ) );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_footer_copyright_text',
     array(
-        'type'        => 'epsilon-text-editor',
+        'type'        => 'colorlib-text-editor',
         'label'       => esc_html__( 'Footer copyright text', 'sintec' ),
         'section'     => 'sintec_footer_section',
         'default'     => wp_kses_post( $copyText ),
@@ -415,10 +415,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_footer_widget_bdcolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Background Color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_footer_section',
@@ -427,10 +427,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget text color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_footer_widget_textcolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Text Color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_footer_section',
@@ -439,10 +439,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget title color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_footer_widget_titlecolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Widget Title Color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_footer_section',
@@ -451,10 +451,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget anchor color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_footer_widget_anchorcolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_footer_section',
@@ -463,10 +463,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget anchor hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'sintec_footer_widget_anchorhovcolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Hover Color', 'sintec' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'sintec_footer_section',
