@@ -119,122 +119,108 @@
 			$scripts = array(
 				'style' => array(
 					array(
-						'handler'		=> 'google-font',
+						'handler'		=> 'sintec-theme-google-font',
 						'file' 			=> $this->google_font(),
 					),
 					array(
-						'handler'		=> 'bootstrap',
+						'handler'		=> 'sintec-theme-bootstrap',
 						'file' 			=> $cssPath.'bootstrap.css',
 						'dependency' 	=> array(),
-						'version' 		=> '1.0',
+						'version' 		=> '5.3.8-4',
 					),
 					array(
-						'handler'		=> 'font-awesome',
+						'handler'		=> 'sintec-theme-font-awesome',
 						'file' 			=> $cssPath.'fontawesome/css/all.css',
 						'dependency' 	=> array(),
 						'version' 		=> '5.0',
 					),
 					array(
-						'handler'		=> 'themify',
+						'handler'		=> 'sintec-theme-themify',
 						'file' 			=> $cssPath.'themify-icons.css',
 						'dependency' 	=> array(),
 						'version' 		=> '1.0',
 					),
 					array(
-						'handler'		=> 'owl-carousel',
+						'handler'		=> 'sintec-theme-owl-carousel',
 						'file' 			=> $cssPath.'owl.carousel.min.css',
 						'dependency' 	=> array(),
 						'version' 		=> '1.0',
 					),
 					array(
-						'handler'		=> 'animate',
+						'handler'		=> 'sintec-theme-animate',
 						'file' 			=> $cssPath.'animate.css',
 						'dependency' 	=> array(),
 						'version' 		=> '1.0',
 					),
 					array(
-						'handler'		=> 'default-css',
+						'handler'		=> 'sintec-theme-default-css',
 						'file' 			=> $cssPath.'default.css',
 						'dependency' 	=> array(),
 						'version' 		=> $this->sintec_version,
 					),
 					array(
-						'handler'		=> 'main',
+						'handler'		=> 'sintec-theme-main',
 						'file' 			=> $cssPath.'main.css',
 						'dependency' 	=> array(),
 						'version' 		=> $this->sintec_version,
 					),
 					array(
-						'handler'		=> 'responsive',
+						'handler'		=> 'sintec-theme-responsive',
 						'file' 			=> $cssPath.'responsive.css',
 						'dependency' 	=> array(),
 						'version' 		=> $this->sintec_version,
 					),
 					array(
-						'handler'		=> 'sintec-style',
+						'handler'		=> 'sintec-theme-sintec-style',
 						'file' 			=> get_stylesheet_uri(),
 					),
 				),
 				
 				'scripts' => array(
 					array(
-						'handler'		=> 'popper',
-						'file' 			=> $jsPath.'popper.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '4.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'bootstrap',
+						'handler'		=> 'sintec-theme-bootstrap',
 						'file' 			=> $jsPath.'bootstrap.min.js',
 						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '4.1.3',
+						'version' 		=> '5.3.8-4',
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'stellar',
+						'handler'		=> 'sintec-theme-stellar',
 						'file' 			=> $jsPath.'stellar.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'imagesloaded-pkgd',
-						'file' 			=> $jsPath.'imagesloaded.pkgd.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'isotope',
+						'handler'		=> 'sintec-theme-isotope',
 						'file' 			=> $jsPath.'isotope-min.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'owl-carousel',
+						'handler'		=> 'sintec-theme-owl-carousel',
 						'file' 			=> $jsPath.'owl.carousel.min.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'ajaxchimp',
+						'handler'		=> 'sintec-theme-ajaxchimp',
 						'file' 			=> $jsPath.'jquery.ajaxchimp.min.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'waypoints',
+						'handler'		=> 'sintec-theme-waypoints',
 						'file' 			=> $jsPath.'jquery.waypoints.min.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'counterup',
+						'handler'		=> 'sintec-theme-counterup',
 						'file' 			=> $jsPath.'jquery.counterup.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> '1.0',
@@ -242,7 +228,7 @@
 					),
 					
 					array(
-						'handler'		=> 'sintec-main',
+						'handler'		=> 'sintec-theme-sintec-main',
 						'file' 			=> $jsPath.'main.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> $this->sintec_version,

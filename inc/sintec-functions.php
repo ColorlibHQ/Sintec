@@ -114,7 +114,7 @@ if ( ! function_exists( 'sintec_posted_comments' ) ) {
             } else {
                 $comments = esc_html__( '1 Comment','sintec' );
             }
-            $comments = '<a href="' . esc_url( get_comments_link() ) . '"><i class="fa fa-comments"></i>'. $comments .'</a>';
+            $comments = '<a href="' . esc_url( get_comments_link() ) . '"><i class="fa-solid fa-comments"></i>'. $comments .'</a>';
         } else {
             $comments = esc_html__( 'Comments are closed', 'sintec' );
         }

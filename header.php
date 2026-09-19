@@ -33,7 +33,7 @@
 			        if ( sintec_opt( 'sintec_social_profile_toggle' ) == 1 ) {
 				        if ( is_array( $social_links ) && count( $social_links ) > 0 ) {
 					        ?>
-                            <div class="float-right">
+                            <div class="float-end">
                                 <span class="follow_us">Follow us: </span>
                                 <ul class="list header_social">
 							        <?php
@@ -59,7 +59,7 @@
                         echo sintec_theme_logo( 'navbar-brand logo_h' );
                         ?>
                     </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>

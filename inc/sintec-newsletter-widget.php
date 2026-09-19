@@ -47,7 +47,7 @@ class Sintec_newsletter_widget extends WP_Widget {
     ?>
         <div id="mc_embed_signup">
             <form action="<?php echo esc_url( $actionurl ); ?>" id="mc-embedded-subscribe-form" class="form-inline" method="post">
-                <div class="form-group row no-gutters">
+                <div class="form-group row g-0">
                     <div class="col-lg-8 col-md-8 col-7">
                         <input type="email" name="EMAIL" placeholder="<?php esc_html_e( 'Your Email Address', 'sintec' ); ?>" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '" required>
                     </div>
