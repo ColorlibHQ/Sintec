@@ -212,26 +212,19 @@
 						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
-					array(
-						'handler'		=> 'sintec-theme-waypoints',
-						'file' 			=> $jsPath.'jquery.waypoints.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'sintec-theme-counterup',
-						'file' 			=> $jsPath.'jquery.counterup.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
 					
+					array(
+						'handler'		=> 'sintec-ui-js',
+						'file' 			=> $jsPath.'colorlib-ui.js',
+						'dependency' 	=> array(),
+						'version' 		=> '2.1.1',
+						'in_footer' 	=> true
+					),
 					array(
 						'handler'		=> 'sintec-theme-sintec-main',
 						'file' 			=> $jsPath.'main.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> $this->sintec_version,
+						'dependency' 	=> array( 'jquery', 'sintec-ui-js' ),
+						'version' 		=> $this->sintec_version . '-s1',
 						'in_footer' 	=> true
 					),
 

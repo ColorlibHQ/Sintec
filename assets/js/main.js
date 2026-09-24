@@ -38,10 +38,7 @@
 
 
      if(document.getElementById("number-section")){
-        $('.counter').counterUp({
-            delay: 10,
-            time: 1000
-        });
+        ColorlibUI.counter('.counter', { time: 1000 });
     }
 
 
