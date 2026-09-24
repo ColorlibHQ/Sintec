@@ -333,30 +333,31 @@ class Sintec_Testimonial extends Widget_Base {
         if( \Elementor\Plugin::$instance->editor->is_edit_mode() === true  ) {
         ?>
         <script>
-        ( function( $ ){
-
-			$('.active-testimonial-carusel').owlCarousel({
-				items: 2,
-				loop: true,
-				margin: 30,
-				autoplayHoverPause: true,
-				smartSpeed:500,
-				dots: true,
-				// autoplay: true,
-				responsive: {
-					0: {
-						items: 1
-					},
-					480: {
-						items: 1,
-					},
-					992: {
-						items: 2,
-					}
-				}
-			});
-            
-        })(jQuery);
+        (function () {
+            function run() {
+                var UI = window.ColorlibUI;
+                if (!UI) return;
+                UI.owl('.active-testimonial-carusel', {
+                    items: 2,
+                    loop: true,
+                    margin: 30,
+                    autoplayHoverPause: true,
+                    smartSpeed: 500,
+                    dots: true,
+                    // autoplay: true,
+                    responsive: {
+                        0: { items: 1 },
+                        480: { items: 1 },
+                        992: { items: 2 }
+                    }
+                });
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', run);
+            } else {
+                run();
+            }
+        })();
         </script>
         <?php 
         }

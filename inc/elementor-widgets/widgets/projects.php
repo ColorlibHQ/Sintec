@@ -335,21 +335,24 @@ class Sintec_projects extends Widget_Base {
         if( \Elementor\Plugin::$instance->editor->is_edit_mode() === true  ) {
         ?>
         <script>
-        ( function( $ ){
+        (function () {
+            function run() {
+                var UI = window.ColorlibUI;
+                if (!UI) return;
+                var workGrid = [];
 
+                UI.toElements('.portfolio-filter ul li').forEach(function (item) {
+                    item.addEventListener('click', function () {
+                        UI.toElements('.portfolio-filter ul li').forEach(function (li) { li.classList.remove('active'); });
+                        item.classList.add('active');
 
-                $('.portfolio-filter ul li').on('click', function () {
-                    $('.portfolio-filter ul li').removeClass('active');
-                    $(this).addClass('active');
-
-                    var data = $(this).attr('data-filter');
-                    $workGrid.isotope({
-                        filter: data
+                        var data = item.getAttribute('data-filter');
+                        workGrid.forEach(function (grid) { grid.arrange({ filter: data }); });
                     });
                 });
 
                 if (document.getElementById('portfolio')) {
-                    var $workGrid = $('.portfolio-grid').isotope({
+                    workGrid = UI.isotope('.portfolio-grid', {
                         itemSelector: '.all',
                         percentPosition: true,
                         masonry: {
@@ -357,9 +360,13 @@ class Sintec_projects extends Widget_Base {
                         }
                     });
                 }
-            
-
-        })(jQuery);
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', run);
+            } else {
+                run();
+            }
+        })();
         </script>
         <?php 
         }

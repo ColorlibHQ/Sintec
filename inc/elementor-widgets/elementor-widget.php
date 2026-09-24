@@ -294,15 +294,13 @@ if ( !class_exists( 'Sintec_El_Widgets' ) ) {
             // googleapis js
             wp_register_script( 'maps-googleapis', '//maps.googleapis.com/maps/api/js?key='.esc_attr( $apiKey ) );
 
-            // ajaxchimp js
-            wp_enqueue_script( 'jquery-ajaxchimp', SINTEC_DIR_ELEMENTOR . 'assets/js/jquery.ajaxchimp.min.js', array('jquery'), '1.0', true );
 
 
             // sintec map custom js
-            wp_register_script( 'sintec-map-custom', SINTEC_DIR_ELEMENTOR . 'assets/js/map-custom.js', array('jquery'), '1.0', true );
+            wp_register_script( 'sintec-map-custom', SINTEC_DIR_ELEMENTOR . 'assets/js/map-custom.js', array(), '1.0-s2', true );
 
             // sintec companion main js
-            wp_enqueue_script( 'sintec', SINTEC_DIR_ELEMENTOR . 'assets/js/sintec-companion-main.js', array( 'jquery', 'jquery-ui-datepicker' ), '1.0', true );
+            wp_enqueue_script( 'sintec', SINTEC_DIR_ELEMENTOR . 'assets/js/sintec-companion-main.js', array( 'sintec-ui-js' ), '1.0-s2', true );
 
 
             wp_localize_script( 'sintec', 'ajax_object',

@@ -180,51 +180,23 @@
 					array(
 						'handler'		=> 'sintec-theme-bootstrap',
 						'file' 			=> $jsPath.'bootstrap.min.js',
-						'dependency' 	=> array( 'jquery' ),
+						'dependency' 	=> array(),
 						'version' 		=> '5.3.8-4',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'sintec-theme-stellar',
-						'file' 			=> $jsPath.'stellar.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'sintec-theme-isotope',
-						'file' 			=> $jsPath.'isotope-min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'sintec-theme-owl-carousel',
-						'file' 			=> $jsPath.'owl.carousel.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'sintec-theme-ajaxchimp',
-						'file' 			=> $jsPath.'jquery.ajaxchimp.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
 					
 					array(
 						'handler'		=> 'sintec-ui-js',
-						'file' 			=> $jsPath.'colorlib-ui.js',
+						'file' 			=> $jsPath . ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'colorlib-ui.js' : 'colorlib-ui.min.js' ),
 						'dependency' 	=> array(),
-						'version' 		=> '2.1.1',
+						'version' 		=> '3.0.0',
 						'in_footer' 	=> true
 					),
 					array(
 						'handler'		=> 'sintec-theme-sintec-main',
 						'file' 			=> $jsPath.'main.js',
-						'dependency' 	=> array( 'jquery', 'sintec-ui-js' ),
-						'version' 		=> $this->sintec_version . '-s1',
+						'dependency' 	=> array( 'masonry', 'sintec-ui-js' ),
+						'version' 		=> $this->sintec_version . '-s2',
 						'in_footer' 	=> true
 					),
 
