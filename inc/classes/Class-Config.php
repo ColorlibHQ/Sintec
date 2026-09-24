@@ -162,7 +162,7 @@
 						'handler'		=> 'sintec-theme-main',
 						'file' 			=> $cssPath.'main.css',
 						'dependency' 	=> array(),
-						'version' 		=> $this->sintec_version,
+						'version' 		=> $this->sintec_version . '-s3',
 					),
 					array(
 						'handler'		=> 'sintec-theme-responsive',
